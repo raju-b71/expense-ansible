@@ -5,7 +5,7 @@
     - name: Disable Default Nodejs Version Module
       community.general.npm:
        name: nodejs
-       state: disabled
+       state: absent
 
    # - name: Enable Nodejs Module for v20
     #  community.general.npm:
