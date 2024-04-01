@@ -45,7 +45,7 @@
 
 
 
-    - name: Install Mysql Client
+    - name: Install MySQL Client
       ansible.builtin.dnf:
         name: mysql
         state: latest
