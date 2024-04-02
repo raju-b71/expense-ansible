@@ -5,8 +5,8 @@
 
 - name: Copy Expense Nginx Configuration
   ansible.builtin.copy:
-    src: expense.conf
-    dest: /etc/nginx/default.d/expense.conf
+    src: exise.conf
+    dest: /etc/nginx/default.d/exise.conf
 
 - name: Import App Pre Requisites
   ansible.builtin.import_role:
