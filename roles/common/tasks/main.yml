@@ -1,2 +1,11 @@
 - name: Set Prompt with component
   ansible.builtin.shell: set-prompt {{ component }}-{{ env }}
+
+
+- name: Install Node Exporter
+  ansible.builtin.import_role:
+    name: promnode
+    tasks_from: node_exporter
+
+
+#so from here it will go to all node_exporter
