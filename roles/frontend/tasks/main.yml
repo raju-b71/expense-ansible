@@ -14,13 +14,13 @@
     tasks_from: app-pre-req
 
 - name: Start Nginx
-  ansible.builtin.systemd.service:
+  ansible.builtin.systemd_service:
     name: nginx
     state: started
 
 - name: Import NewRelic Nginx Setup
   ansible.builtin.import_role:
     name: newrelic
-    tasks_from: nginx.yml
+    tasks_from: nginx
 
    #ijd
