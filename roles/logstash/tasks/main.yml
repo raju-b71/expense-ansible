@@ -1,0 +1,23 @@
+- name: Copy Elastic Repo file
+  ansible.builtin.template:
+    name: elastic.repo
+    path: /etc/yum.repos.d/elastic.repo
+
+
+- name: Install Logstash
+  ansible.builtin.dnf:
+    name: logstash
+    state: installed
+
+- name: Copy Logstash Configuration
+  ansible.builtin.template:
+    src: logstash.conf
+    dest: /etc/logstash/conf.d/logstash.conf
+
+- name: Start Logstash
+  ansible.builtin.systemd_service:
+    state: restarted
+    enabled: yes
+
+
+
