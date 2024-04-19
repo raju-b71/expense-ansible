@@ -1,4 +1,4 @@
-- name: Copy rsyslog conf
+- name: Copy rsyslog config
   ansible.builtin.template:
     src: rsyslog.conf
     dest: "{{component}}.conf"
