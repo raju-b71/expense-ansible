@@ -50,7 +50,7 @@
     target: /app/schema/backend.sql
     login_user: "{{rds_username}}"
     login_password: "{{rds_password}}"
-    login_host: {{ rds_endpoint }}
+    login_host: "{{ rds_endpoint }}"
 
 - name: Import NewRelic NodeJS Setup
   ansible.builtin.import_role:
