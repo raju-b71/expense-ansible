@@ -18,7 +18,7 @@
 #    owner: "{{ app_user }}"
 #    group: "{{ app_user }}"
 
-#
+
 - name: Download and Extract App Content - From Artifactory
   ansible.builtin.unarchive:
     src: http://{{artifactory_user}}:{{artifactory_password}}@artifactory-internal.rajdevops.online:8081/artifactory/expense-{{ component }}/{{APP_VERSION}}.zip
