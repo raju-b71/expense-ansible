@@ -25,7 +25,7 @@ pipelines:
               tasks:
                 - exec:
                     arguments:
-                      - ansible.sh
+                      - ansible.sh                  #backend will call ansible.sh
                       - backend
                     command: bash #bash ansible.sh frontend
                     run_if: passed
