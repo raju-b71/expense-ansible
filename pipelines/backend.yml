@@ -1,7 +1,7 @@
 
 format_version: 10
 pipelines:
-  backend:
+  expense-backend:
     group: defaultGroup
     materials:
       git-da613e5:
