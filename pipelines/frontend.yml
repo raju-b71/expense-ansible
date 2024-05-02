@@ -11,6 +11,8 @@ pipelines:
         branch: main
     secure_variables:
       vault_token: AES:hDEVaGzCtlYK3Cwott/s/Q==:3t0AarZ1uJhV05MPg/k/imWXwLPkSs1ymgynrLX+ESU=
+    environment_variables:
+      APP_VERSION: ""
     stages:
       - DEV:
           fetch_materials: true
