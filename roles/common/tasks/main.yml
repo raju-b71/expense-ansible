@@ -18,7 +18,7 @@
   ansible.builtin.import_role:
     name: rsyslog
   when: rsyslog_config_needed | bool and not only_deployment | bool
-#35
+#35gyyyyt
 
 
 
